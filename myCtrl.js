@@ -8,4 +8,8 @@ app.controller('myCtrl', function($scope) {
     $scope.myCol = 'lightblue';
     $scope.quantity = 5;
     $scope.cost = 1;
-})
+
+    $scope.showName = function( ) {
+        alert($scope.person.firstName + " " + $scope.person.lastName);
+    };
+});
