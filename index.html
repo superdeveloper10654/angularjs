@@ -2,7 +2,7 @@
 <html>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <body>
-        <div ng-app="myApp" ng-controller="myCtrl" ng-init="myCol = 'lightblue'; quantity = 1; cost = 5">
+        <div ng-app="myApp" ng-controller="myCtrl">
             <h1 style="text-align: center;">
                 My first AugularJS page
             </h1>
@@ -15,15 +15,7 @@
             <p>Third points is {{points[2]}}</p>
         </div>
 
-        <script>
-            var app = angular.module('myApp', []);
-            app.controller('myCtrl', function($scope) {
-                $scope.person = {
-                    firstName: "Gerard",
-                    lastName: "Sullivan"
-                };
-                $scope.points = [1, 15, 19, 2, 40];
-            })
-        </script>
+        <script src="myApp.js"></script>
+        <script src="myCtrl.js"></script>
     </body>
 </html>
