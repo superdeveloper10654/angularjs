@@ -1,7 +1,0 @@
-input.ng-empty {
-    background-color: red;
-}
-
-input.ng-not-empty {
-    background-color: lightblue;
-}
