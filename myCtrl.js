@@ -4,6 +4,17 @@ app.controller('myCtrl', function($scope) {
         firstName: "Gerard",
         lastName: "Sullivan"
     };
+    $scope.names = [
+        {name:'Jani',country:'Norway'},
+        {name:'Carl',country:'Sweden'},
+        {name:'Margareth',country:'England'},
+        {name:'Hege',country:'Norway'},
+        {name:'Joe',country:'Denmark'},
+        {name:'Gustav',country:'Sweden'},
+        {name:'Birgit',country:'Denmark'},
+        {name:'Mary',country:'England'},
+        {name:'Kai',country:'Norway'}
+    ];
     $scope.points = [1, 15, 19, 2, 40];
     $scope.myCol = 'lightblue';
     $scope.quantity = 5;
@@ -12,4 +23,8 @@ app.controller('myCtrl', function($scope) {
     $scope.showName = function( ) {
         alert($scope.person.firstName + " " + $scope.person.lastName);
     };
+
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+    }
 });
