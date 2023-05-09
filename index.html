@@ -39,6 +39,9 @@
             <div>
                 <!-- <input type="text" ng-name="url" ng-model="myUrl"> -->
                 <p>{{myWelcome}}</p>
+                <select ng-model="selected" ng-options="y.name for (x, y) in names"></select>
+                <h1>You selected: {{selected.name}}</h1>
+                <h2>Country: {{selected.country}}</h2>
             </div>
         </form>
 
