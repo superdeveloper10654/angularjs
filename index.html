@@ -12,6 +12,7 @@
             Full Name: {{person.firstName + " " + person.lastName}}
             <p>Total in dollar: {{quantity * cost}}</p>
             <!-- <p>Total in dollar: <span ng-bind="quantity * cost"></span></p> -->
+            <p>Third points is {{points[2]}}</p>
         </div>
 
         <script>
@@ -21,6 +22,7 @@
                     firstName: "Gerard",
                     lastName: "Sullivan"
                 };
+                $scope.points = [1, 15, 19, 2, 40];
             })
         </script>
     </body>
