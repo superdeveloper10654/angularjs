@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <head>
+        <link rel="stylesheet" href="myStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    
     <body>
-        <div ng-app="myApp" ng-controller="myCtrl" ng-init="members = ['John', 'Franco', 'Ryan']">
+        <form ng-app="myApp" ng-controller="myCtrl" ng-init="members = ['John', 'Franco', 'Ryan']">
             <h1 style="text-align: center;">
                 My first AugularJS page
             </h1>
-            First Name: <input type="text", ng-model="person.firstName" style="background-color: {{myCol}}"><br>
-            Last Name: <input type="text", ng-model="person.lastName" style="background-color: {{myCol}}"><br>
+            First Name: <input type="text", ng-model="person.firstName" required><br>
+            Last Name: <input type="text", ng-model="person.lastName" required><br>
             <br>
             Full Name: {{person.firstName + " " + person.lastName}}
             <p>Total in dollar: {{quantity * cost}}</p>
@@ -21,7 +25,7 @@
                 </ul>
             </div>
             <test-directive></test-directive>
-        </div>
+        </form>
 
         <script src="myApp.js"></script>
         <script src="myCtrl.js"></script>
